@@ -1,0 +1,10 @@
+{
+	"api_path_development":"https://cbs.wappsystem.com/dev/",
+	"api_path_production":"https://rt.woolcock.org.au/",
+	"default_production":"Yes",
+    "panels":{
+		"website":		{"url":"","modules":["modules/website/module.json"]},
+		"insomnia101":			{"url":"modules/panel/insomnia101.html","modules":["modules/participant-and-others/module.json","modules/edc/module.json"]},
+		"insomnia101-child":	{"url":"modules/panel/insomnia101.child.html",	"modules":["modules/participant-and-others/module.json","modules/edc/module.json"]}
+	}
+}
