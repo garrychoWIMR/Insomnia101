@@ -4,7 +4,7 @@ var prefix=$vm.module_list[$vm.vm['__ID'].name].prefix; if(prefix==undefined) pr
 var participant_pid=$vm.module_list[prefix+'participant'].table_id;
 var notes_pid=$vm.module_list[prefix+'edc-notes'].table_id;
 //var sql_participant="@('Initials')";
-var sql_participant="JSON_VALUE(Information,'$.Initials')";
+var sql_participant="JSON_VALUE(Information,'$.Screening_ID')";
 //-------------------------------------
 _record_type="s2";
 var _task_fields='';
