@@ -12,30 +12,7 @@ var _task_fields='';
 var site_sql_where='';
 var site_array=[];
 var site_filter_and_request=function(){
-	/*
-    var sql="select List=@('Site_List') from [FORM-"+site_filter_pid+"] where S2=@S1";
-    var req_data={cmd:'query_records',sql:sql,s1:$vm.user};
-    $VmAPI.request({data:req_data,callback:function(res){
-        if(res.records.length>0){
-            var sites=res.records[0].List.replace(/\r/g,'\n').replace(/\n\n/g,'\n').replace(/\n/g,',');
-            sites=sites.replace(',*','');
-            sites=sites.replace('*','');
-            site_array=sites.split(',');
-            var sites="";
-            for(var i=0;i<site_array.length;i++){
-                if(sites!=="") sites+=",";
-                sites+="'"+site_array[i]+"'";
-            }
-            if(res.records[0].List.indexOf('*')!==-1) site_sql_where='';
-            else site_sql_where=" where S1 in ("+sites+")";
-        }
-        else{
-            site_sql_where=" where S1 in ('')";
-        }
-        _set_req(); _request_data();
-    }});
-	*/
-}
+	}
 //-------------------------------------
 _set_req=function(){
     if($vm.online_questionnaire===1){

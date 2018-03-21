@@ -6,9 +6,12 @@
         //-------------------------------------
         VmInclude:__COMPONENT__/grid/grid.v3.js
         VmInclude:__CURRENT_PATH__/task.js
-        
+
         //-------------------------------------
-        _task_fields="Completion,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16,Q17";
+        _task_fields="Time of Completion|Completion,1. Time in bed before lights out|Q1,2. Time for lights out|Q2,3. Estimated time to fall sleep|Q3";
+        _task_fields+=",4. Time you awoke the next morning|Q4,5. Total sleep time|Q5,6. Number and Duration of Awakenings|Q6";
+        _task_fields+=",7. Quality|Q7,8. Additional hours of sleep desired|Q8,9. Naps|Q9,10. Medications|Q10,11. Caffeine|Q11";
+        _task_fields+=",12. Sleep quality|Q12,13. Refreshed?|Q13,14. Deep?|Q14,15. Bed comfort?|Q15,16. Noise?|Q16,17. Dreams?|Q17";
         _fields="_Form|form_module,Record ID|UID,Study_ID|Participant,"+_task_fields;
         _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete,_Hidden|Participant_uid";
         _grid_to_form_parameters={task_fields:_task_fields};
